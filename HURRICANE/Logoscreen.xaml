@@ -1,0 +1,14 @@
+﻿<Window x:Class="Logoscreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HURRICANE"
+        mc:Ignorable="d"
+        Title="Logoscreen"  Height="450" Width="450" Icon="MEDIA/TigerEyefeathered.png" WindowStyle="None" AllowsTransparency="true" WindowStartupLocation="CenterScreen" Background="Transparent">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="HURRICANE" VerticalAlignment="Top" Foreground="#FFCF3F09" FontSize="48" FontFamily="GreatShake" Margin="0,80,0,0" />
+        <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" TextAlignment="Center" Text="HoUston tigeRs paRallel vIsual basic sCAnNEr" FontSize="28" FontFamily="High Tower Text" VerticalAlignment="Bottom" Foreground="#FFCF3F09" Margin="0,0,0,50" Width="323"/>
+        <Image HorizontalAlignment="Center" Height="166" VerticalAlignment="Center" Width="154" Source="MEDIA/TigerEyefeathered.png" Opacity="0.8" />
+    </Grid>
+</Window>

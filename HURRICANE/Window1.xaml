@@ -1,0 +1,95 @@
+﻿<Window x:Class="Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HURRICANE"
+        mc:Ignorable="d"
+        Loaded="Window1Loaded"
+        Title="Window1" Topmost="True"  Cursor="Cross" Opacity="0.8" ResizeMode="NoResize" Width="{DynamicResource {x:Static SystemParameters.PrimaryScreenWidthKey}}" Height="{DynamicResource {x:Static SystemParameters.PrimaryScreenHeightKey}}" WindowStyle="None" Top="0" Left="0" AllowsTransparency="True" Background="Transparent">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="{x:Type Control}"  x:Key="baseStyle">
+                <Setter Property="Control.FontSize" Value="13"/>
+                <Setter Property="TextElement.FontFamily" Value="Maiandra GD"/>
+                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="#72180a"/>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+            <Style TargetType="{x:Type Label}" BasedOn="{StaticResource baseStyle}">
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#82210f"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <CheckBox Mouse.PreviewMouseDown="Closer"  HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Image Mouse.PreviewMouseDown="Start" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="53" Margin="-5,1032,0,-2" Source="MEDIA/WinIcon.png" Stretch="UniformToFill" />
+
+        <Grid x:Name="StartGrid" HorizontalAlignment="Left" Height="274" Margin="0,764,0,0" VerticalAlignment="Top" Width="148" Visibility="Visible" Background="#a02914">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Helpdesk" Grid.Row="0" />
+            <Label Content="Assets" Grid.Row="1"  />
+            <Label Content="Scanning" Grid.Row="2"  />
+            <Label Content="Label" Grid.Row="3"  />
+            <Label Content="Label" Grid.Row="4"  />
+            <Label Content="Label" Grid.Row="5"  />
+            <Label Content="Label" Grid.Row="6"  />
+            <Label Content="Label" Grid.Row="7"  />
+            <Label Content="Google Admin" Grid.Row="8"  />
+            <Label Content="Active Directory" Grid.Row="9"  />
+            <Label Content="Label" Grid.Row="10"  />
+        </Grid>
+
+        <Grid x:Name="Helpdesk" HorizontalAlignment="Left" Height="274" Margin="149,764,0,0" VerticalAlignment="Top" Width="148" Visibility="Visible" Background="#a02914">
+            <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="View All" Grid.Row="0" Mouse.PreviewMouseDown="ViewAllTickets"/>
+            <Label Content="New" Grid.Row="1 " Mouse.PreviewMouseDown="NewTicket"/>
+            <Label Content="____________" Grid.Row="2"  />
+            <Label Content="Tickets write to console.output" Grid.Row="3"  Mouse.PreviewMouseDown="PullTickets"/>
+            <Label Content="Ticket2" Grid.Row="4"  />
+            <Label Content="Ticket3" Grid.Row="5"  />
+            <Label Content="Ticket4" Grid.Row="6"  />
+            <Label Content="Ticket5" Grid.Row="7"  />
+            <Label Content="Ticket6" Grid.Row="8"  />
+            <Label Content="Ticket7" Grid.Row="9"  />
+            <Label Content="Ticket8" Grid.Row="10"  />
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="Splash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HURRICANE"
+        mc:Ignorable="d"
+        Title="Splash" Height="450" Width="800" Icon="MEDIA/GRFTfeathered.png" WindowStyle="None" AllowsTransparency="true" WindowStartupLocation="CenterScreen" Background="Transparent">
+    <Grid MouseLeftButtonDown="Move">
+    <Grid.Background>
+      <ImageBrush ImageSource="MEDIA/GRFTfeathered.png"/>
+    </Grid.Background>
+
+  </Grid>
+</Window>
